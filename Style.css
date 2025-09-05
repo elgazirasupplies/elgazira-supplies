@@ -1,0 +1,189 @@
+/* ========== الأساسيات العامة ========== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf4ec; /* أخضر فاتح مائل للرمادي */
+    color: #333;
+}
+
+/* ========== عنوان رئيسي بخلفية ========== */
+.main-title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 30px 0;
+    color: #fff;
+    background-color: #2e7d32; /* أخضر داكن */
+}
+
+/* ========== قسم الترحيب ========== */
+.welcome-section {
+    background-color: #ffffff;
+    padding: 60px;
+}
+
+.welcome {
+    font-size: 40px;
+    color: #2e7d32;
+}
+
+.info {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* روابط الإيميل باللون الأسود في القسم العلوي */
+a.email-link-black {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+a.email-link-black:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* ========== سلايدر الصور المتحرك ========== */
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 50px 0;
+    background-color: #333; /* يخلي الصور تبان */
+}
+
+.slider-track {
+    display: flex;
+    width: calc(300px * 6);
+    animation: scrollImages 30s linear infinite;
+}
+
+.slider-track img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+@keyframes scrollImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ========== عناوين الأقسام ========== */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2e7d32;
+    margin-top: 60px;
+    background-color: #e0f2f1; /* لون هادي للفصل */
+    padding: 20px;
+}
+
+.about-ar {
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    direction: rtl; /* مهم جدًا */
+}
+.about-en {
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    direction: ltr; /* هذا الاختياري لأن اللغة الإنجليزية افتراضياً ltr */
+}
+
+
+/* ========== معلومات الاتصال تحت ========== */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #388e3c; /* أخضر داكن */
+    padding: 30px 0;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* روابط الإيميل باللون الأبيض في القسم السفلي */
+a.email-link-white {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+a.email-link-white:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+a.location-link-black {
+  color: #000; /* أسود */
+  text-decoration: none;
+}
+
+a.location-link-white {
+  color: #fff; /* أبيض */
+  text-decoration: none;
+}
+
+a.location-link-black:hover{
+      color: #000; /* أخضر فاتح */
+  cursor: pointer;
+  text-decoration: underline;
+}
+a.location-link-white:hover {
+  color: #ccc; /* أخضر فاتح */
+  cursor: pointer;
+  text-decoration: underline;
+}
+.phone-link-black {
+  color: #000; /* أسود عادي */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phone-link-black:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.phone-link-white {
+  color: #fff; /* أبيض */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phone-link-white:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
