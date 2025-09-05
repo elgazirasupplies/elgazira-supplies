@@ -187,3 +187,15 @@ a.location-link-white:hover {
   cursor: pointer;
 }
 
+.logo-watermark {
+  position: absolute;
+  top: 145px; /* ارتفاعه يكون قدام كلمة welcome تقريبًا */
+  right: 30px;
+  opacity: 0.2; /* شفافية اللوغو */
+  z-index: 10;
+}
+
+.logo-watermark img {
+  width: 350px; /* حجم اللوجو */
+  height: auto;
+}
